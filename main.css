@@ -1,0 +1,30 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+h2{
+    background: rgba(0,0,0,.1);
+    padding: 10px;
+    text-align: center;
+}
+.blogEntry{
+    /*border: 2px solid #f5f5fa;*/
+    background: #f5f5f5;
+    padding: 25px;
+    margin: 25px;
+}
+
+.code {
+    font-family: "Lucida Console", Monaco, monospace;
+    padding: 2px;
+    background: grey;
+    color: white
+}
+
+img.svg {
+    max-width: 1280px;
+}
+
+img.svg {
+    width: 100%;
+    max-width: 1280px;
+}
