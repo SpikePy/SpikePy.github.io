@@ -16,7 +16,7 @@ h2{
 .code {
     font-family: "Lucida Console", Monaco, monospace;
     padding: 2px;
-    background: grey;
+    background: rgba(180, 180, 180, 1);
     color: white
 }
 
