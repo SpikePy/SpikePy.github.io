@@ -1,5 +1,7 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
+	font-size: 17px;
+	line-height: 130%;
 	background-image: url("background/sayagata-400px.png");
 	background-attachment: fixed
 	/*
@@ -76,8 +78,10 @@ body {
 
 .code {
 	font-family: monospace;
+	font-size: .8em;
 	padding: 2px 8px;
 	background: rgb(1, 36, 86);
+	background: rgb(61, 96, 146);
 	color: rgb(255, 255, 255);
 }
 
