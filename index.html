@@ -6,13 +6,9 @@
 </head>
 <body>
 	<div id="header">
-		<div>
-			<ul>
-				<li><a href="index.html">Blog</a></li>
-				<li><a href="about.html">About Me</a></li>
-				<li><a href="others.html">Others</a></li>
-			</ul>
-		</div>
+		<div><a href="index.html">Blog</a></div>
+		<div><a href="about.html">About Me</a></div>
+		<div><a href="others.html">Others</a></div>
 	</div>
 	<div class="blogEntry">
 		<div class="blogHeading">
@@ -31,7 +27,7 @@
 				After installing the Creators Update (1704) I again met a bug I once had with windows 8. Every time I woke up my system from sleep all windows were resized to 1024 × 768 and stacked in the upper left corner.
 			</p>
 			<p>
-				Luckily I remembered <a href="https://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/windows-7-movesresizes-windows-on-monitor-power/1653aafb-848b-464a-8c69-1a68fbd106aa?auth=1">where to find a solution</a>. The solution was - like in my previous post - modifying something in the registry. I just had to edit the two keys <span class="code">PrimSurfSize.cx</span> and <span class="code">PrimSurfSize.cy</span> <b>... in every shown subfolder!</b>
+				Luckily I remembered <a href="https://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/windows-7-movesresizes-windows-on-monitor-power/1653aafb-848b-464a-8c69-1a68fbd106aa?auth=1">where to find a solution</a>. The solution was - like in my previous post - modifying something in the registry. I just had to edit the two keys <code>PrimSurfSize.cx</code> and <code>PrimSurfSize.cy</code> <b>... in every shown subfolder!</b>
 			</p>
 			<img style="width: 100%; max-width: 1176px" src="pictures/Screenshot_20170330.png" alt="Regedit">
 			<p>
@@ -58,7 +54,7 @@
 			<img style="width: 100%; max-width: 608px" src="pictures/Screenshot_20170326.png" alt="Windows 10 FileExplorer QuickAccessToolbar">
 			<p>
 				After lots of research I found out how to fix the Problem.
-				Deleting the following registry resets the QuickAccessToolbar: <span class="code">HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Ribbon\QatItems</span>
+				Deleting the following registry resets the QuickAccessToolbar: <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Ribbon\QatItems</code>
 			</p>
 		</div>
 	</div>

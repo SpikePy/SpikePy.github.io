@@ -1,6 +1,7 @@
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 17px;
+	margin: 0px;
 	line-height: 130%;
 	background-image: url("background/sayagata-400px.png");
 	background-attachment: fixed
@@ -19,26 +20,27 @@ body {
 #header {
 	height: 60px;
 	background: rgba(0,100,0,.0);
-}
-
-#header div {
-	width: auto;
+	width: 85%;
+	margin: auto;
 	height: inherit;
 	text-align: center;
 }
 
-#header ul {
-	list-style-type: none;
+#header div {
+	width: 10em;
+	display: inline-block;
+	padding: 8px 30px;
+	margin: 0px 10px;
+	border-radius: 0px 0px 10px 10px;
+	color: #ffffff;
+	background: rgba(0,0,0,.6);
 }
 
-#header li {
-	/*Add your CSS here!*/
-	display: inline-block;
-	padding: 10px 40px;
-	margin: 10px 10px;
-	border-radius: 3px;
-	color: #ffffff;
-	background: rgba(0,0,0,.2);
+#header a {
+	font-weight: bold;
+	color: rgba(240,240,240,1);
+	font-size: 1.2em;
+	text-decoration: none;
 }
 
 .blogEntry{
@@ -96,7 +98,7 @@ body {
 	overflow-wrap: break-word;
 }
 
-.code {
+code {
 	font-family: monospace;
 	font-size: .8em;
 	padding: 2px 8px;
