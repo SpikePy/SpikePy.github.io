@@ -89,7 +89,7 @@ body {
 
 
 
-.blogBody{
+.blogBody {
 	background: rgba(250,250,250,.8);
 	padding: 20px 20px 15px;
 	border-style: solid;
@@ -98,12 +98,22 @@ body {
 	overflow-wrap: break-word;
 }
 
+.blogBody a {
+	color: DodgerBlue;
+	text-decoration: none;
+}
+
+.blogBody a:hover {
+	text-decoration: underline;
+
+}
+
 code {
 	font-family: monospace;
 	font-size: .8em;
 	padding: 2px 8px;
 	background: rgb(1, 36, 86);
-	background: rgb(61, 96, 146);
+	background: DimGray;
 	color: rgb(255, 255, 255);
 }
 
