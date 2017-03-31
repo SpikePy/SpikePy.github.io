@@ -1,73 +1,88 @@
-body{
-        font-family: Helvetica, Arial, sans-serif;
-        background-image: url("background/sayagata-400px.png");
-        background-attachment: fixed
-        /*
-        footer_lodyas.png
-        sayagata-400px.png
-        squairy_light.png
-        squairy_light_@2X.png
-        stardust.png
-        stardust_@2X.png
-        tweed.png
-        tweed_@2X.png
-        */
-
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	background-image: url("background/sayagata-400px.png");
+	background-attachment: fixed
+	/*
+	footer_lodyas.png
+	sayagata-400px.png
+	squairy_light.png
+	squairy_light_@2X.png
+	stardust.png
+	stardust_@2X.png
+	tweed.png
+	tweed_@2X.png
+	*/
 }
 
 #header {
-    height: 60px;
-    margin-top: -15px;
-    background: rgba(0,100,0,.0);
+	height: 60px;
+	margin-top: -15px;
+	background: rgba(0,100,0,.0);
 }
+
 #header div {
-    width: auto;
-    height: inherit;
-    text-align: center;
+	width: auto;
+	height: inherit;
+	text-align: center;
 }
 
 #header ul {
-    list-style-type: none;
+	list-style-type: none;
 }
 
 #header li {
 	/*Add your CSS here!*/
 	display: inline-block;
 	padding: 10px 40px;
-        margin: 10px 10px;
+	margin: 10px 10px;
+	border-radius: 3px;
 	color: #ffffff;
-        background: rgba(0,0,0,.2);
+	background: rgba(0,0,0,.2);
 }
 
 .blogEntry{
-        background: rgba(250,250,250,.7);
-        width: 85%;
-        margin: 40px auto 70px auto;
-        border-radius: 10px 10px 0px 0px;
-        border: 1px solid rgba(70,70,70,.5);
+	width: 85%;
+	max-width: 1024px;
+	margin: 30px auto 80px auto;
+	border-radius: 10px 10px 0px 0px;
 }
 
-h2{
-        background: rgba(0,0,0,.5);
-        color: white;
-        padding: 15px;
-        margin: 0px 0px;
-        border-radius: 10px 10px 0px 0px;
-        text-align: center;
+.blogHeading {
+	background: rgba(0,0,0,.6);
+	color: rgba(240,240,240,1);
+	margin: 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+}
+
+.blogHeading > h2 {
+	display: inline-block;
+}
+
+.blogHeading > img {
+	position: relative;
 }
 
 .blogBody{
-    padding: 25px 25px;
+	background: rgba(250,250,250,.8);
+	padding: 20px 20px 15px;
+	border-style: solid;
+	border-color: rgba(0,0,0,.6);
+	border-width: 0px 2px 2px 2px;
+	overflow-wrap: break-word;
 }
 
 .code {
-        font-family: monospace;
-        padding: 2px 8px;
-        background: rgb(1, 36, 86);
-        color: rgb(255, 255, 255);
+	font-family: monospace;
+	padding: 2px 8px;
+	background: rgb(1, 36, 86);
+	color: rgb(255, 255, 255);
 }
 
-img.svg {
-        width: 100%;
-        max-width: 1280px;
+.blogBody > img {
+	display: block;
+	margin: 40px auto 20px;
+	max-width: 100%;
 }
