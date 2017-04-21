@@ -36,7 +36,7 @@
 			<p>
 				In Vol. 8 of <a href="https://www.codecentric.de/wissen/softwerker/">Der Softwerker</a> - which I recommend to take a look at if you are a german speaking developer - are some really nice adult-coloring-images (I think thats the name of the recently hyped pictures) of animals. Because my girlfriend loves rhinos I wanted to get the image on page 64. So I downlaoded the pdf and opened the page with Inkscape and the shown settings.
 			</p>
-			<img style="max-width: 974px" src="pictures/inkscape_importDialog.png" alt="Inkscape import dialog">
+			<img style="max-width: 974px" src="pictures/inkscape_importDialog.gif" alt="Inkscape import dialog">
 			<p>
 				I removed the text and already filled color with ease but then I recognized that the rhino itself was no vector image. <b>Why do you do this?! I want nice sharp and scaling vector images!</b>
 			</p>
@@ -44,10 +44,10 @@
 				Luckily Inkscape is a mighty tool. With the function <em>Trace Bitmap</em> I vectorized the image. The only diffuculty is to find out what parameters are good for the given image.
 			</p>
 			<div class="comparison">
-				<img src="pictures/rhino_raster.png" title="Rhino raster graphics" alt="Rhino raster graphics"><img src="pictures/rhino_vector.svg" title="Rhino vector graphics" alt="Rhino vector graphics">
+				<a href="pictures/rhino_raster.png"><img src="pictures/rhino_raster_preview.png" title="Rhino raster graphics" alt="Rhino raster graphics"></a><a href="pictures/rhino_vector.svgz"><img src="pictures/rhino_vector.svgz" title="Rhino vector graphics" alt="Rhino vector graphics"></a>
 				<p>Raster image</p><p>Vector image</p>
 			</div>
-			<p>The result is a clean sharp scalable and  370 kb image instead of a 2220 kb raster image with all its disadvantages. You can right-click on the images to show them in a new tab and zoom in to see the differences.</p>
+			<p>The result is a clean sharp scalable and  130 kb image instead of a 2220 kb raster image (the shown is already optimized) with all its disadvantages. Click on the images to show them in a new tab and zoom in to see the differences.</p>
 		</div>
 	</div>
 	<div class="blogEntry">
@@ -69,7 +69,7 @@
 			<p>
 				Luckily I remembered <a href="https://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/windows-7-movesresizes-windows-on-monitor-power/1653aafb-848b-464a-8c69-1a68fbd106aa?auth=1">where to find a solution</a>. The solution was - like in my previous post - modifying something in the registry. I just had to edit the two keys <code>PrimSurfSize.cx</code> and <code>PrimSurfSize.cy</code> <b>... in every shown subfolder!</b>
 			</p>
-			<img style="width: 100%; max-width: 1176px" src="pictures/Screenshot_20170330.png" alt="Regedit">
+			<img style="width: 100%; max-width: 1176px" src="pictures/Screenshot_20170330.gif" alt="Regedit">
 			<p>
 				I hate this database called registry because you never knows where to find a specific setting or how it's related to the installed programs. In Linux you can often predict where to look for the settings if something is going wrong - readable config files in the ~/.config folder.
 			</p>
@@ -91,7 +91,7 @@
 			<p>
 				Damn Windows 10. My File Explorer crashed every time because something in QuickAccessToolbar was broken. That's what I found out by looking through the Event Log.
 			</p>
-			<img style="width: 100%; max-width: 608px" src="pictures/Screenshot_20170326.png" alt="Windows 10 FileExplorer QuickAccessToolbar">
+			<img style="width: 100%; max-width: 608px" src="pictures/Screenshot_20170326.gif" alt="Windows 10 FileExplorer QuickAccessToolbar">
 			<p>
 				After lots of research I found out how to fix the Problem.
 				Deleting the following registry resets the QuickAccessToolbar: <code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Ribbon\QatItems</code>
@@ -101,7 +101,7 @@
 	<div class="blogEntry">
 		<div class="blogHeading">
 			<div class="innerBlogHeading">
-				<img class="icon" src="pictures/raspberryPiLogo.svg" alt="Raspberry Pi Logo">
+				<img class="icon" src="pictures/raspberryPiLogo.svgz" alt="Raspberry Pi Logo">
 				<h2 class="headline">Raspberry Pi Zero W</h2>
 				<div class="date">
 					<p>11.</p>
@@ -112,7 +112,7 @@
 		</div>
 		<div class="blogBody">
 			<div style="display: block;">
-				<img style="float: right; max-width: 40%; max-height: 250px; margin: 0px 0px 20px 40px" src="pictures/piZero.png" title="Raspberry Pi Zero W" alt="Raspberry Pi Zero W">
+				<img style="float: right; max-width: 40%; max-height: 250px; margin: 0px 0px 20px 40px" src="pictures/piZero.gif" title="Raspberry Pi Zero W" alt="Raspberry Pi Zero W">
 				<p>
 					I always wanted one of those cute Raspberries, even if I didn't know what for - just out of curiosity and because they look so cute and all the things you could do with them.
 				</p>
@@ -161,9 +161,9 @@
 				So I decided to do a remake with my beloved Open Source vector software <a href="https://inkscape.org/">Inkscape</a>.
 			</p>
 			<p>
-				Here is the 7.41 kb small result:
+				Here is the 1 kb small result:
 			</p>
-			<img src="pictures/wallpaper_pyramid.svg" alt="Pyramid wallpaper as svg">
+			<img src="pictures/wallpaper_pyramid.svgz" alt="Pyramid wallpaper as svg">
 		</div>
 	</div>
 </body>
