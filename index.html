@@ -1,14 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>SpikePi Blog</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-97072101-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 </head>
 <body>
 	<div id="header">
 		<div><a href="index.html">Blog</a></div>
 		<div><a href="about.html">About Me</a></div>
 		<div><a href="others.html">Others</a></div>
+	</div>
+	<div class="blogEntry">
+		<div class="blogHeading">
+			<div class="innerBlogHeading">
+				<img class="icon" src="pictures/inkscapeLogo.svg" alt="Inkscape Logo">
+				<h2 class="headline">Vectorizing raster image with Inkscape</h2>
+				<div class="date">
+					<p>18.</p>
+					<p>April</p>
+					<p>2017</p>
+				</div>
+			</div>
+		</div>
+		<div class="blogBody">
+
+			<p>
+				In Vol. 8 of <a href="https://www.codecentric.de/wissen/softwerker/">Der Softwerker</a> - which I recommend to take a look at if you are a german speaking developer - are some really nice adult-coloring-images (I think thats the name of the recently hyped pictures) of animals. Because my girlfriend loves rhinos I wanted to get the image on page 64. So I downlaoded the pdf and opened the page with Inkscape and the shown settings.
+			</p>
+			<img style="max-width: 974px" src="pictures/inkscape_importDialog.png" alt="Inkscape import dialog">
+			<p>
+				I removed the text and already filled color with ease but then I recognized that the rhino itself was no vector image. <b>Why do you do this?! I want nice sharp and scaling vector images!</b>
+			</p>
+			<p>
+				Luckily Inkscape is a mighty tool. With the function <em>Trace Bitmap</em> I vectorized the image. The only diffuculty is to find out what parameters are good for the given image.
+			</p>
+			<div class="comparison">
+				<img src="pictures/rhino_raster.png" title="Rhino raster graphics" alt="Rhino raster graphics"><img src="pictures/rhino_vector.svg" title="Rhino vector graphics" alt="Rhino vector graphics">
+				<p>Raster image</p><p>Vector image</p>
+			</div>
+			<p>The result is a clean sharp scalable and  850 kb image instead of a 2220 kb raster image with all its disadvantages. You can right-click on the images to show them in a new tab and zoom in to see the differences.</p>
+		</div>
 	</div>
 	<div class="blogEntry">
 		<div class="blogHeading">
@@ -127,13 +167,4 @@
 		</div>
 	</div>
 </body>
-<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-97072101-1', 'auto');
-	ga('send', 'pageview');
-</script>
 </html>

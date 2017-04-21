@@ -99,15 +99,19 @@ body {
 	border-width: 0px 2px 2px 2px;*/
 	overflow-wrap: break-word;
 }
-
 .blogBody a {
 	color: DodgerBlue;
 	text-decoration: none;
 }
-
 .blogBody a:hover {
 	text-decoration: underline;
 
+}
+.blogBody > img {
+	display: block;
+	margin: 40px auto 40px;
+	width: 100%;
+	max-width: 100%;
 }
 
 code {
@@ -119,8 +123,13 @@ code {
 	color: rgb(255, 255, 255);
 }
 
-.blogBody > img {
-	display: block;
-	margin: 40px auto 40px;
-	max-width: 100%;
+.comparison {
+	margin: 40px 0;
+}
+.comparison * {
+	display: inline-block;
+	width: 50%;
+}
+.comparison p {
+	text-align: center;
 }
