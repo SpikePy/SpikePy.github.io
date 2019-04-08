@@ -2,6 +2,13 @@ h1 {
   text-align: center;
   font-size: 10vw;
 }
+table {
+  margin: 0 auto;
+}
+td {
+  width:50%;
+  font-size: 3vw;
+}
 
 img {
   display: block;
@@ -15,29 +22,27 @@ img {
 }
 
 input {
-  display:inline;
   text-align: center;
-  margin: 0 auto;
-  padding: 1vw;
   font-size: 3vw;
-  width: 12%;
+  /* margin: 0 auto; */
+  /* border: none; */
 }
 
 select {
-  display:inline;
   text-align: center;
-  margin: 0 auto;
-  padding: 1vw;
   font-size: 3vw;
-  width: 58%;
+  width: 100%;
+  /* margin: 0 auto; */
+  /* border: none; */
 }
 
 button {
-  display:inline;
-  margin: 0 auto;
-  padding: 1vw;
+  display:block;
+  text-align: center;
+  margin: 1vw auto;
+  padding: 1vw 2vw;
   font-size: 3vw;
-  width: 25%;
+  width: 100%;
 }
 
 #text {
