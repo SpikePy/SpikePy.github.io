@@ -72,7 +72,7 @@ function html(state) {
 // Get value of html-select to decides which elements of *database_commands_array* 
 // should be included
 function get_difficulty() {
-  return select.options[select.selectedIndex].value;
+  return difficulty.options[difficulty.selectedIndex].value;
 }
 
 // Get waitingg time between commands

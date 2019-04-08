@@ -9,6 +9,7 @@
 </head>
 <body>
   <h1>Wing Chun Trainer</h1>
+  <p id="text"></p>
   <img id="image" src="images/hand.jpg" alt="Bild der Techniken">
   <div id="interaction">
     <table>
@@ -33,7 +34,7 @@
       <tr>
         <td>Schwierigkeitsgrad: </td>
         <td style="text-align:center">
-          <select required id='select' title="Anfäger: Tan/Gan Sao&#10;Fortgeschritten: Tan/Gan/Pak Sao&#10;Profi: Tan/Gan/Pak/Cham Sao&#10;Meister: Tan/Gan/Pak/Cham/Bong Sao">
+          <select required id='difficulty' title="Anfäger: Tan/Gan Sao&#10;Fortgeschritten: Tan/Gan/Pak Sao&#10;Profi: Tan/Gan/Pak/Cham Sao&#10;Meister: Tan/Gan/Pak/Cham/Bong Sao">
             <option value="2">Anfänger</option>
             <option value="3" selected>Fortgeschritten</option>
             <option value="4">Profi</option>
@@ -45,7 +46,6 @@
 
     <button id="button" onclick="start();">Start</button>
   </div>
-  <p id="text"></p>
   <audio id="audio"></audio>
 </body>
 </html>
