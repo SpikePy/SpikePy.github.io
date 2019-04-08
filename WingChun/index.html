@@ -7,7 +7,7 @@
   <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <script src="script.js"></script>
 </head>
-<body>
+<body onload="onload();">
   <h1>Wing Chun Trainer</h1>
   <div id="interaction">
     <select required id='select' title="Schwierigkeitsgrad">
@@ -17,7 +17,7 @@
       <option value="7">Profi</option>
       <option value="9">Meister</option>
     </select>
-    <button id="button" onclick="commands_random();">Training starten</button>
+    <button id="button" onclick="start();">Training starten</button>
   </div>
   <p id="text"></p>
   <audio id="player"></audio>
