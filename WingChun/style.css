@@ -15,12 +15,12 @@ img {
 }
 
 input {
-  display:block;
+  display:inline;
   text-align: center;
   margin: 0 auto;
   padding: 1vw;
   font-size: 3vw;
-  width: 49%;
+  width: 12%;
 }
 
 select {
@@ -29,7 +29,7 @@ select {
   margin: 0 auto;
   padding: 1vw;
   font-size: 3vw;
-  width: 49%;
+  width: 58%;
 }
 
 button {
@@ -37,7 +37,7 @@ button {
   margin: 0 auto;
   padding: 1vw;
   font-size: 3vw;
-  width: 49%;
+  width: 25%;
 }
 
 #text {
