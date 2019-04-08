@@ -10,12 +10,19 @@
 <body onload="onload();">
   <h1>Wing Chun Trainer</h1>
   <div id="interaction">
+    <input id="repetitions" title="Wiederholungen" type="number" min="1" value="10" max="1000">
     <select required id='select' title="Schwierigkeitsgrad">
-      <option value="9" disabled selected hidden>Schwierigkeitsgrad</option>
+      <!-- <option value="9" disabled selected hidden>Schwierigkeitsgrad</option>
       <option value="3">Anfänger</option>
       <option value="5">Fortgeschritten</option>
       <option value="7">Profi</option>
-      <option value="9">Meister</option>
+      <option value="9">Meister</option> -->
+      
+      <option value="5" disabled selected hidden>Schwierigkeitsgrad</option>
+      <option value="2">Anfänger</option>
+      <option value="3">Fortgeschritten</option>
+      <option value="4">Profi</option>
+      <option value="5">Meister</option>
     </select>
     <button id="button" onclick="start();">Training starten</button>
   </div>
