@@ -4,13 +4,23 @@
   <meta charset="utf-8">
   <title>Wing Chun Trainer</title>
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
   <script src="script.js"></script>
 </head>
 <body>
-  <h1 style='text-align: center; font-size: 10vw;'>Wing Chun Trainer</h1>
-  <button id="button" style='display:block; margin: 0 auto; padding: 2vw; font-size: 5vw;' onclick="commands_random();">Training starten</button>
-  <p id="text" style="text-align: center; font-size: 3vw;"></p>
+  <h1>Wing Chun Trainer</h1>
+  <div id="interaction">
+    <select required id='select' title="Schwierigkeitsgrad">
+      <option value="9" disabled selected hidden>Schwierigkeitsgrad</option>
+      <option value="3">Anfänger</option>
+      <option value="5">Fortgeschritten</option>
+      <option value="7">Profi</option>
+      <option value="9">Meister</option>
+    </select>
+    <button id="button" onclick="commands_random();">Training starten</button>
+  </div>
+  <p id="text"></p>
   <audio id="player"></audio>
-  <img id="image" style="display: block; margin: 2vw auto; width: 70%;" src="images/hand.jpg" alt="Bild der Techniken">
+  <img id="image" src="images/hand.jpg" alt="Bild der Techniken">
 </body>
 </html>

@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+  font-size: 10vw;
+}
+
+img {
+  display: block;
+  margin: 2vw auto;
+  width: 70%;
+}
+
+#interaction {
+  margin: 0 auto;
+  width: 70%
+}
+
+select {
+  display:inline;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1vw;
+  font-size: 3vw;
+  width: 49%;
+}
+
+button {
+  display:inline;
+  margin: 0 auto;
+  padding: 1vw;
+  font-size: 3vw;
+  width: 50%;
+}
+
+#text {
+  text-align: center;
+  font-size: 3vw;
+}
