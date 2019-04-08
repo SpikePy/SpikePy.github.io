@@ -13,8 +13,7 @@ const database_technique = [
 // Entry point, gets started if button is pressed
 function start() {
   html("running");
-  let audio  = document.getElementById('player');
-  
+    
   let commands_array = [];
   for (let index = 0; index < get_repetitions() * 4; index += 4) {
     let random_side      = Math.round(Math.random());
@@ -28,7 +27,7 @@ function start() {
   
   console.table(commands_array);
 
-  let index = 0;
+  let index  = 0;
   let toggle = 1; //toggles between side and technique
   text.innerHTML = commands_array[index+0];
   image.src      = commands_array[index+1];

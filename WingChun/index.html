@@ -9,18 +9,19 @@
 </head>
 <body>
   <h1>Wing Chun Trainer</h1>
+  <img id="image" src="images/hand.jpg" alt="Bild der Techniken">
   <div id="interaction">
     <table>
       <tr>
         <td>Wiederholungen: </td>
         <td style="text-align:center">
-          <input id="repetitions" title="Wiederholungen" type="number" min="1" value="10" max="9999">
+          <input id="repetitions" title="Anzahl der Wiederholungen" type="number" min="1" value="10" max="9999">
         </td>
       </tr>
       <tr>
         <td>Geschwindigkeit: </td>
         <td style="text-align:center">
-          <select required id='speed' title="Zeit zwischen Anweisungen">
+          <select required id='speed' title="Pause zwischen Anweisungen">
               <option value="0">0 ms</option>
               <option value="500">500 ms</option>
               <option value="1000" selected>1000 ms</option>
@@ -32,7 +33,7 @@
       <tr>
         <td>Schwierigkeitsgrad: </td>
         <td style="text-align:center">
-          <select required id='select' title="Schwierigkeitsgrad">
+          <select required id='select' title="Anfäger: Tan/Gan Sao&#10;Fortgeschritten: Tan/Gan/Pak Sao&#10;Profi: Tan/Gan/Pak/Cham Sao&#10;Meister: Tan/Gan/Pak/Cham/Bong Sao">
             <option value="2">Anfänger</option>
             <option value="3" selected>Fortgeschritten</option>
             <option value="4">Profi</option>
@@ -40,36 +41,11 @@
           </select>
         </td>
       </tr>
-    </table> 
-    
+    </table>
+
     <button id="button" onclick="start();">Start</button>
-    
-    <!-- <p>Wiederholungen: </p>
-    <input id="repetitions" title="Wiederholungen" type="number" min="1" value="10" max="9999">
-    <br>
-    <p>Geschwindigkeit: </p>
-    <select required id='speed' title="Zeit zwischen Anweisungen">
-        <option value="500" disabled selected hidden>Geschwindigkeit</option>
-        <option value="0">0 ms</option>
-        <option value="500">500 ms</option>
-        <option value="1000">1000 ms</option>
-        <option value="1500">1500 ms</option>
-        <option value="2000">2000 ms</option>
-    </select>
-    <br>
-    <p>Schwierigkeitsgrad: </p>
-    <select required id='select' title="Schwierigkeitsgrad">
-      <option value="5" disabled selected hidden>Schwierigkeitsgrad</option>
-      <option value="2">Anfänger</option>
-      <option value="3">Fortgeschritten</option>
-      <option value="4">Profi</option>
-      <option value="5">Meister</option>
-    </select>
-    <br>
-    <button id="button" onclick="start();">Start</button> -->
   </div>
   <p id="text"></p>
-  <audio id="player"></audio>
-  <img id="image" src="images/hand.jpg" alt="Bild der Techniken">
+  <audio id="audio"></audio>
 </body>
 </html>
