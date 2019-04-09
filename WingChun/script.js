@@ -3,53 +3,31 @@ const database_side = [
   ['Rechts: ', 'rechts.mp3'],
 ];
 const database_technique = [
-  ['Tan Sao',  'tan.mp3',  'tan.jpg'],
-  ['Gan Sao',  'gan.mp3',  'gan.jpg'],
-  ['Pak Sao',  'pak.mp3',  'pak.jpg'],
-  ['Cham Sao', 'cham.mp3', 'cham.jpg'],
-  ['Bong Sao', 'bong.mp3', 'bong.jpg'],
+  ['Tan Sao',  'tan.mp3',  'tan.jpg'],  // │ │ │ │
+  ['Gan Sao',  'gan.mp3',  'gan.jpg'],  // │ │ │ └─ Anfänger
+  ['Pak Sao',  'pak.mp3',  'pak.jpg'],  // │ │ └─── Fortgeschritten
+  ['Cham Sao', 'cham.mp3', 'cham.jpg'], // │ └───── Profi
+  ['Bong Sao', 'bong.mp3', 'bong.jpg'], // └─────── Meister
 ];
 
 // Entry point, gets started if button is pressed
 function start() {
   html("running");
-    
-  let commands_array = [];
-  for (let index = 0; index < get_repetitions() * 4; index += 4) {
-    let random_side      = Math.round(Math.random());
-    let random_technique = Math.floor(Math.random() * get_difficulty());
-    
-    commands_array[index+0] = database_side[random_side][0] + database_technique[random_technique][0];
-    commands_array[index+1] = "images/" + database_technique[random_technique][2];
-    commands_array[index+2] = "audio/side/"  + database_side[random_side][1];
-    commands_array[index+3] = "audio/technique/"  + database_technique[random_technique][1];
-  }
-  
-  console.table(commands_array);
 
-  let index  = 0;
   let toggle = 1; //toggles between side and technique
-  text.innerHTML = commands_array[index+0];
-  image.src      = commands_array[index+1];
-  audio.src      = commands_array[index+2];
-  audio.play();
+  command_1();
   audio.onended = function() {
-    if(index < commands_array.length) {
-      if(toggle == 0){
-        setTimeout(function(){
-          text.innerHTML = commands_array[index+0];
-          image.src      = commands_array[index+1];
-          audio.src      = commands_array[index+2];
-          audio.play();
-        },get_speed());
-        toggle = 1;
-      } 
-      else {
-        audio.src      = commands_array[index+3];
-        audio.play();
-        toggle = 0;
-        index += 4;
+    let repetition = toggle / 2;
+    if(repetition < get_repetitions()) {
+      if(toggle % 2 == 0){
+        setTimeout(function(){ // Wait for given time till command_1 is started
+          command_1();
+        },get_wait());
       }
+      else {
+        command_2();
+      }
+      toggle++;
     } 
     else {
       html("reset");
@@ -76,11 +54,25 @@ function get_difficulty() {
 }
 
 // Get waitingg time between commands
-function get_speed() {
-  return speed.options[speed.selectedIndex].value;
+function get_wait() {
+  return wait.options[wait.selectedIndex].value;
 }
 
 // Get value of repetitions input field
 function get_repetitions() {
   return repetitions.value;
+}
+
+function command_1() {
+  random_side      = Math.round(Math.random());
+  random_technique = Math.floor(Math.random() * get_difficulty());
+  text.innerHTML   = database_side[random_side][0] + database_technique[random_technique][0];
+  image.src        = "images/" + database_technique[random_technique][2];
+  audio.src        = "audio/side/"  + database_side[random_side][1];
+  audio.play();
+}
+
+function command_2() {
+  audio.src      = "audio/technique/" + database_technique[random_technique][1];
+  audio.play();
 }
