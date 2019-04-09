@@ -22,7 +22,7 @@ function start() {
       if(toggle % 2 == 0){
         setTimeout(function(){ // Wait for given time till command_1 is started
           command_1();
-        },get_wait());
+        },get_waitTime());
       }
       else {
         command_2();
@@ -54,7 +54,7 @@ function get_difficulty() {
 }
 
 // Get waitingg time between commands
-function get_wait() {
+function get_waitTime() {
   return wait.options[wait.selectedIndex].value;
 }
 
