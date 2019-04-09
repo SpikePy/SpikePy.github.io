@@ -2,7 +2,7 @@ const database_side = [
   ['Links: ',  'links.mp3',],
   ['Rechts: ', 'rechts.mp3'],
 ];
-const database_technique = [
+const database_technique = [            // Schwierigkeitsgrade
   ['Tan Sao',  'tan.mp3',  'tan.jpg'],  // │ │ │ │
   ['Gan Sao',  'gan.mp3',  'gan.jpg'],  // │ │ │ └─ Anfänger
   ['Pak Sao',  'pak.mp3',  'pak.jpg'],  // │ │ └─── Fortgeschritten
@@ -22,7 +22,6 @@ function start() {
       random_side      = Math.round(Math.random());
       random_technique = Math.floor(Math.random() * get_difficulty());
       text.innerHTML   = database_side[random_side][0] + database_technique[random_technique][0];
-      console.log(text.innerHTML)
       image.src        = "images/" + database_technique[random_technique][2];
       audio.src        = "audio/side/"  + database_side[random_side][1];
       audio.play();
@@ -47,7 +46,7 @@ function html(state) {
   }
   else if (state == "reset") {
     interaction.style.display = "block";
-    image.src      = "images/hand.jpg"
+    image.src      = "images/hand.jpg";
     text.innerHTML = "";
   }
 }
@@ -67,18 +66,4 @@ function get_waitTime() {
 // Get value of repetitions input field
 function get_repetitions() {
   return repetitions.value;
-}
-
-function command_1() {
-  random_side      = Math.round(Math.random());
-  random_technique = Math.floor(Math.random() * get_difficulty());
-  text.innerHTML   = database_side[random_side][0] + database_technique[random_technique][0];
-  image.src        = "images/" + database_technique[random_technique][2];
-  audio.src        = "audio/side/"  + database_side[random_side][1];
-  audio.play();
-}
-
-function command_2() {
-  audio.src      = "audio/technique/" + database_technique[random_technique][1];
-  audio.play();
 }
