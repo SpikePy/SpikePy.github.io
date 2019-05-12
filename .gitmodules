@@ -1,0 +1,9 @@
+[submodule "Celsius-Fahrenheit-Converter"]
+	path = Celsius-Fahrenheit-Converter
+	url = https://github.com/SpikePy/Celsius-Fahrenheit-Converter.git
+[submodule "Blog"]
+	path = Blog
+	url = https://github.com/SpikePy/Blog.git
+[submodule "WingChun"]
+	path = WingChun
+	url = https://github.com/SpikePy/WingChun.git
