@@ -17,5 +17,4 @@ $(for index in */index.html; do echo -e "\t\t<li><a href=\"$index\">${index%%/*}
     </ul>
 </body>
 </html>
-
 EOF
