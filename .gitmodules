@@ -7,7 +7,3 @@
 [submodule "WingChun"]
 	path = WingChun
 	url = https://github.com/SpikePy/WingChun.git
-[submodule "DHL-Packstation-Code"]
-	path = DHL-Packstation-Code
-	url = git@github.com:SpikePy/DHL-Packstation-Code.git
-	branch = master
