@@ -11,3 +11,6 @@
 	path = DHL-Packstation-Code
 	url = https://github.com/SpikePy/DHL-Packstation-Code.git
 	branch = master
+[submodule "BMI-Calculator"]
+	path = BMI-Calculator
+	url = https://github.com/SpikePy/BMI-Calculator.git
