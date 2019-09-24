@@ -17,3 +17,6 @@
 [submodule "RandomNumber"]
 	path = RandomNumber
 	url = https://github.com/SpikePy/RandomNumber.git
+[submodule "Packstation_Fit"]
+	path = Packstation_Fit
+	url = https://github.com/SpikePy/Packstation_Fit.git
