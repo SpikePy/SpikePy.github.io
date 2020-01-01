@@ -1,23 +1,51 @@
+:root {
+  --title:      #1985a1;
+  --headline:   #dcdcdd;
+  --link:       #c5c3c6;
+  --background: url("images/background/footer_lodyas.png");
+  /*
+  --background: url("images/background/footer_lodyas.png");
+  --background: url("images/background/tweed.pn");
+  --background: url("images/background/tweed_@2X.pn");
+  --background: url("images/background/stardust.pn");
+  --background: url("images/background/stardust_@2X.pn");
+  --background: url("images/background/squairy_light.pn");
+  --background: url("images/background/squairy_light_@2X.pn");
+  --background: url("images/background/sayagata-400px.pn");
+  */
+}
+
 html {
   font-family: sans-serif;
-  font-size: 3rem;
+  font-size: 2.5em;
   text-align: center;
-  color: rgb(50, 50, 50);
+	background-attachment: fixed;
+  background-image: var(--background);
+}
+
+h1 {
+  font-size: 3em;
+  color:  var(--title);
+}
+
+h2 {
+  font-size: 2em;
+  color: var(--headline);
 }
 
 li {
   list-style-type: none;
-  margin: 1rem;
+  margin: 1em;
   height: 1em;
 }
 
 a {
   text-decoration: none;
-  color: DodgerBlue;
+  color: var(--link);
   transition: all .5s ease;
 }
 a:visited {
-  color: DodgerBlue;
+  color: var(--link);
 }
 a:hover {
   /* color:  rgb(50, 50, 50); */
