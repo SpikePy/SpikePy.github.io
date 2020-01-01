@@ -20,3 +20,6 @@
 [submodule "Packstation_Fit"]
 	path = Packstation_Fit
 	url = https://github.com/SpikePy/Packstation_Fit.git
+[submodule "Math_Trainer"]
+	path = Math_Trainer
+	url = https://github.com/SpikePy/Math_Trainer.git
