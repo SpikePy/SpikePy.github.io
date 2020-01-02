@@ -20,6 +20,7 @@ html {
   text-align: center;
 	background-attachment: fixed;
   background-image: var(--background);
+  user-select: none;
 }
 
 h1 {
