@@ -1,0 +1,105 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select:   none;
+    -o-user-select:     none;
+    user-select:        none;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo {
+  width: 4em;
+  vertical-align: middle;
+  padding: .5em;
+}
+
+key {
+  font-family: monospace;
+	/* font-weight: 700; */
+  padding: .1em .3em;
+  background-color: rgb(230, 230, 230);
+  border-radius: .3em;
+}
+
+#description {
+  margin:  .8em auto 3em;
+  width: 28em;
+  max-width: 95vw;
+}
+
+ol {
+    text-align: left;
+}
+
+true {
+  color: green;
+  font-weight: 700;
+}
+
+false {
+  color: red;
+  font-weight: 700;
+}
+
+#setup {
+  margin:  .8em auto 3em;
+  width: 28em;
+  max-width: 95vw;
+}
+
+div {
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+#setup input[type="range"] {
+    width: 10em;
+}
+
+#main input {
+  display: inline-block;
+  font-size: 2.5em;
+  border-radius: .3em;
+  border: 0;
+  padding: .2em;
+  /* margin: .5em auto; */
+  text-align: right;
+  background-color: rgb(240, 240, 240);
+  -moz-appearance: textfield;
+  transition: background-color .5s ease;
+  width: 2em;
+}
+#main input:disabled {
+  width: 5em;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+#result {
+  color: black;
+}
+#result:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+table {
+  margin: 0 auto 0;
+}
+
+td {
+  padding: .2em;
+  text-align:right;
+}
+
+input[type="range"] {
+  vertical-align: middle;
+}
