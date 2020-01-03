@@ -16,11 +16,16 @@
 }
 
 html {
-  font-family: sans-serif;
-  text-align: center;
-	background-attachment: fixed;
-  background-image: var(--background);
-  user-select: none;
+    font-family: sans-serif;
+    text-align: center;
+  	background-attachment: fixed;
+    background-image: var(--background);
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select:   none;
+    -o-user-select:     none;
+    user-select:        none;
 }
 
 h1 {
