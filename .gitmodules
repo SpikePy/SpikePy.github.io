@@ -23,3 +23,6 @@
 [submodule "Math_Trainer"]
 	path = Math_Trainer
 	url = https://github.com/SpikePy/Math_Trainer.git
+[submodule "Random_Name_Generator"]
+	path = Random_Name_Generator
+	url = https://github.com/SpikePy/Random_Name_Generator.git
