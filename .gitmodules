@@ -26,3 +26,6 @@
 [submodule "Random_Name_Generator"]
 	path = Random_Name_Generator
 	url = https://github.com/SpikePy/Random_Name_Generator.git
+[submodule "rock_paper_scissors"]
+	path = rock_paper_scissors
+	url = https://github.com/SpikePy/rock_paper_scissors.git
