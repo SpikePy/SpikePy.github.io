@@ -18,6 +18,7 @@
 html {
     font-family: sans-serif;
     text-align: center;
+    background: #353535;
   	background-attachment: fixed;
     background-image: var(--background);
 
