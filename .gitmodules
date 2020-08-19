@@ -29,3 +29,6 @@
 [submodule "rock_paper_scissors"]
 	path = rock_paper_scissors
 	url = https://github.com/SpikePy/rock_paper_scissors.git
+[submodule "PayPal-Fee-Calculator"]
+	path = PayPal-Fee-Calculator
+	url = https://github.com/SpikePy/PayPal-Fee-Calculator.git
