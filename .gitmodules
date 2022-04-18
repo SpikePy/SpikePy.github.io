@@ -14,6 +14,7 @@
 [submodule "BMI-Calculator"]
 	path = BMI-Calculator
 	url = https://github.com/SpikePy/BMI-Calculator.git
+	branch = master
 [submodule "RandomNumber"]
 	path = RandomNumber
 	url = https://github.com/SpikePy/RandomNumber.git
@@ -33,3 +34,7 @@
 	path = PayPal-Fee-Calculator
 	url = https://github.com/SpikePy/PayPal-Fee-Calculator.git
 	branch = master
+[submodule "Recipes"]
+	path = Recipes
+	url = https://github.com/SpikePy/recipes.git
+	branch = main
