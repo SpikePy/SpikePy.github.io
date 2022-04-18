@@ -34,7 +34,3 @@
 	path = PayPal-Fee-Calculator
 	url = https://github.com/SpikePy/PayPal-Fee-Calculator.git
 	branch = master
-[submodule "Recipes"]
-	path = Recipes
-	url = https://github.com/SpikePy/recipes.git
-	branch = main
